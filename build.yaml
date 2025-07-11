@@ -23,8 +23,3 @@ include:
     shield: corne_left
   - board: nrf52840dk_nrf52840
     shield: corne_right
-include:
-  - board: nrf52840dk_nrf52840
-    shield: corne_left
-  - board: nrf52840dk_nrf52840
-    shield: corne_right
