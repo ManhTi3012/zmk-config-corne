@@ -16,7 +16,7 @@
      *  the actual matrix positions for your Tab and Lower keys.
      *  Example shown assumes:
      *      - Tab  : matrix position <0 0>
-     *      - Lower: matrix position <3 2>
+     *      - Lower: matrix position <3 1>
      *  Get the correct numbers from your `kscan` matrix in the
      *  board overlay and adjust if necessary.
      * ========================================================== */
@@ -33,8 +33,8 @@
 
     combos {
         alt_tab_combo {
-            timeout-ms = <40>;          /* 40 ms window for combo detection */
-            key-positions = <3 2 0 0>;  /* <Lower row col> <Tab row col>  */
+            timeout-ms = <60>;          /* 60 ms window for combo detection */
+            key-positions = <3 1 0 0>;  /* <Lower row col> <Tab row col>  */
             bindings = <&alt_tab>;      /* Runs the macro above           */
         };
     };
