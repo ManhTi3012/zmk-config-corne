@@ -21,37 +21,6 @@
      *  board overlay and adjust if necessary.
      * ========================================================== */
 
-    behaviors {
-        /* Macro that presses Alt, taps Tab, then releases Alt */
-
-        alt_tab: alt_tab {
-            compatible = "zmk,behavior-macro";
-            label = "ALT_TAB_MACRO";
-            #binding-cells = <0>;
-            bindings = <&kp LALT &kp TAB>;
-        };
-    };
-
-    combos {
-        alt_tab_combo {
-            timeout-ms = <60>;          /* 60 ms window for combo detection */
-            key-positions = <3 1 0 0>;  /* <Lower row col> <Tab row col>  */
-            bindings = <&alt_tab>;      /* Runs the macro above           */
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        layer0 {
-            bindings = <&to 0>;
-            key-positions = <32 33>;
-        };
-    };
-
-    macros {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
