@@ -51,10 +51,10 @@
 
         gamin {
             bindings = <
-&kp T  &kp TAB    &kp Q  &kp W    &kp E  &kp R        &to 0   &trans  &trans  &trans  &trans  &trans
-&kp G  &kp LSHFT  &kp A  &kp S    &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
-&kp B  &kp LCTRL  &kp Z  &kp X    &kp C  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp ESC  &mo 5  &kp SPACE    &trans  &trans  &trans
+&kp T  &kp TAB    &kp Q  &kp W    &kp E  &kp R        &to 0   &trans    &kp UP_ARROW  &trans     &trans  &trans
+&kp G  &kp LSHFT  &kp A  &kp S    &kp D  &kp F        &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&kp B  &kp LCTRL  &kp Z  &kp X    &kp C  &kp V        &trans  &trans    &trans        &trans     &trans  &trans
+                         &kp ESC  &mo 5  &kp SPACE    &trans  &trans    &trans
             >;
         };
 
